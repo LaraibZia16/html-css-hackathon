@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #7C4EE4;
+    --bg-color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--text-color);
+}
+
+h1{
+    font-size: 3.8rem;
+}
+
+h2{
+    line-height: 3.2rem;
+    font-weight: 600;
+}
+
+p{  
+    margin: 0;
+    color: var(--text-color);
+    font-weight: 450;
+    font-size: 1.1rem;
+    line-height: 1.55rem;
+    letter-spacing: 0.07rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+button, a{
+    font-size: 1.15rem;
+    letter-spacing: 0.03rem;
+    word-spacing: .1rem;
+}
+
+
+/* Header Style Start */
+.navbar{
+    background-color: var(--bg-color) !important;
+}
+
+.nav-link{
+    color: #000;
+}
+.nav-link:hover{
+    color: var(--main-color);
+}
+
+.main-btn{
+    background-color: var(--main-color);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+/* Header Style Ends */
+
+/* Hero Section Styles Start*/
+.hero-section{
+    background-color: var(--main-color);
+    padding: 100px 0;
+    color: var(--bg-color);
+}
+
+.hero-btn{
+    background-color: #fff;
+    border: none;
+    color: black;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+/* Hero Section Styles Ends*/
+
+ /* Banner Section Start */
+.overlay-content {
+  position: relative;
+  width: 70%;
+  top: -250px;
+  left: 390px ;
+  color:black;
+   border-radius:16px ;
+  background-color: var(--bg-color);
+}
+/* Banner Section Ends */
+
+
+
+/* media queries */
+@media (max-width: 900px) {
+    .overlay-content {
+        width: 60%;
+        top: -150px;
+        left: 20px ;
+    }
+}
