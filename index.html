@@ -4,279 +4,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hackathon</title>
-    <!-- Font Awesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Bootstrap css cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- Custom css styelesheet -->
+    <title>Hackathon</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Header Section Start-->
+    <!-- Header Section Start -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary my-2">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="./images/Logo.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+                data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item me-3">
-                        <a class="nav-link" aria-current="page" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item me-3">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item me-3">
-                        <a class="nav-link" href="#"><img src="./images/Shape.png" alt=""></a>
-                    </li>
+                    <li class="nav-item me-3"><a class="nav-link"  href="#blog">Blog</a></li>
+                    <li class="nav-item me-3"><a class="nav-link"  href="#about">About</a></li>
+                    <li class="nav-item me-3"><i class="fa-solid fa-magnifying-glass pt-2"></i></a></li>
                 </ul>
-                <button class="btn main-btn  ms-lg-3 py-3 px-5" type="Contact">Contact Us</button>
+               <a href="#contact"> <button class="btn main-btn ms-lg-3 py-3 px-5">Contact Us</button></a>
             </div>
         </div>
     </nav>
     <!-- Header Section Ends -->
 
-    <!-- Hero Section Start-->
+    <!-- Hero Section Start -->
     <section class="bg-main hero-section">
         <div class="container">
-            <div class="row ">
-                <div class="col-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-start">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
                     <p class="mt-3 mb-5 fw-bold">Featured Post</p>
                     <h1>How AI will <br> Change the Future</h1>
                     <p class="mt-3 mb-5">The future of AI will see home robots having enhanced intelligence, increased
                         capabilities, and becoming more personal and possibly cute. For example, home robots will
                         overcome navigation, direction</p>
-                    <div class="text-center w-100 text-md-start pb-md-5">
-                        <button type="button" class="text-capitalize btn btn-dark hero-btn px-5 py-3"
-                            data-bs-toggle="tooltip" data-bs-title="Book Now">Read More</button>
+                    <div class="text-center w-100 text-lg-start">
+                        <button class="hero-btn btn px-5 py-3">Read More</button>
                     </div>
                 </div>
-                <!-- Hero Image Start -->
-                <div class=" col-12 col-md-12 col-lg-6">
-                    <div class=" text-center text-md-start text-lg-end">
-                        <img src="./images/hero.png" alt="hero">
-                    </div>
+                <div class="col-12 col-lg-6 text-center text-lg-end">
+                    <img src="./images/hero.png" class="img-fluid hero-img" alt="hero">
                 </div>
-                <!-- Hero Image Ends -->
             </div>
         </div>
     </section>
-    <!-- Hero Section Ends-->
+    <!-- Hero Section Ends -->
 
-    <!-- Banner Section Starts Here -->
-    <section class="banner-section mt-5 pt-5">
-        <div class="container ">
+    <!-- Banner Section Start -->
+    <section class="banner-section mt-5 pt-5" id="about">
+        <div class="container">
             <div class="row banner-row">
                 <div class="col-12">
-                    <img src="./images/Image Placeholder.png" class="img-fluid w-100 banner-image"
-                        alt="Banner Description">
+                    <img src="./images/Image Placeholder.png" class="img-fluid w-100 banner-image" alt="Banner">
                 </div>
-                <div class="overlay-content py-5">
-                    <div class="d-flex">
-                        <h4>DEVELOPMENT</h4>
-                        <p> 16 March 2023</p>
+                <div class="overlay-content">
+                    <div class="d-flex gap-3">
+                        <b>DEVELOPMENT</b>
+                        <p>16 March 2023</p>
                     </div>
-                    <h2>How to make a Game look more attractive with New <br> VR & AI Technology</h2>
-                    <p class="py-3">Google has been investing in AI for many years and bringing its benefits to individuals,
+                    <h2 class="fw-bold">How to make a Game look more attractive with New VR & AI Technology</h2>
+                    <p class="py-3">Google has been investing in AI for many years and bringing its benefits to
+                        individuals, businesses and communities. Whether it’s publishing state-of-the-art research,
+                        building helpful products or developing tools and resources that enable others, we’re
+                        committed to making AI accessible to everyone.
+                    </p>
+                    <button class="banner-btn btn btn-outline-primary px-5 py-3 my-3">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner Section Ends -->
+
+    <!-- Post Section Start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary post-nav" id="blog">
+        <div class="container mb-3">
+            <h1>Our Recent Posts</h1>
+            <div class="navbar" id="navbarSupportedContent">
+                <button class="btn main-btn ms-auto  py-3 px-5" type="View">View All</button>
+            </div>
+        </div>
+    </nav>
+    <section class="bg-main post-section">
+        <div class="container mb-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 text-center text-lg-end">
+                    <img src="./images/Image Placeholder-2.png" class="img-fluid post-img" alt="Post Image">
+                </div>
+                <div
+                    class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start ps-lg-5 pt-md-5 post-text">
+                    <div class="d-flex gap-3">
+                        <b>DEVELOPMENT</b>
+                        <p>16 March 2023</p>
+                    </div>
+                    <h2 class="mb-2 fw-bold">How to make a Game look more attractive with New VR & AI Technology</h2>
+                    <p class="mb-5">
+                        Google has been investing in AI for many years and bringing its benefits to individuals,
                         businesses and communities. Whether it’s publishing state-of-the-art research, building helpful
                         products or developing tools and resources that enable others, we’re committed to making AI
                         accessible to everyone.
                     </p>
-                    <div class="text-center w-100 text-md-start">
-                        <button type="button" class="banner-btn text-capitalize btn btn-outline-primary px-5 py-3 my-3">Read More</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!-- Banner Section Ends -->
-
-    <!-- Post Section Starts -->
-    <section class="bg-main post-section">
-         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container mb-5">
-            <h1>Our Recent Posts</h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <button class="btn main-btn ms-auto  py-3 px-5" type="View">View All</button>
-            </div>
-        </div>
-    </nav>
-        <div class="container mb-5">
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-6">
-                    <div class=" text-center text-lg-end">
-                        <img src="./images/Image Placeholder-2.png" alt="hero">
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center align-items-start">
-                    <p class=" fw-bold ps-lg-5 ms-lg-5">Featured Post</p>
-                    <h2 class="mt-3 mb-3 ps-5 ms-5 fw-bold">How to make a Game look more attractive with New VR & AI Technology</h2>
-                    <p class=" ps-5 ms-5 mb-5">Google has been investing in AI for many years and bringing its benefits to individuals, businesses and communities. Whether it’s publishing state-of-the-art research, building helpful products or developing tools and resources that enable others, we’re committed to making AI accessible to everyone.
-</p>
-                    <div class="text-center ps-5 ms-5 pt-2 w-100 text-md-start">
-                        <button type="button" class="banner-btn text-capitalize btn btn-outline-primary px-4 py-2">Read More</button>
+                    <div class="text-md-start w-100">
+                        <button class="banner-btn btn btn-outline-primary px-4 py-2">Read More</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
- <!-- Card Section -->
+    <!-- Card Section -->
     <section class="blog-section container my-5">
-  <div class="row g-4">
-    <!-- 1 -->
-    <div class="col-md-4">
-      <div class="blog-card">
-        <img class="pb-5" src="./images/c1.png" alt="">
-        <p><b>Travel</b>  13 March 2023</p>
-        <h4 class="py-3">8 Rules Of Travelling In Sea You Need To Know</h4>
-        <p class="pb-3">Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs </p>
-        <a href="#" class="link-underline-success" !important>Read More...</a>
-      </div>
-    </div>
-    
-    <!-- 2 -->
-    <div class="col-md-4">
-      <div class="blog-card">
-        <img class="pb-5" src="./images/c2.png" alt="">
-        <p><b>DEVELOPMENT</b>  11March 2023</p>
-        <h4 class="py-3">How to build strong portfolio and get a Job in UI/UX</h4>
-        <p class="pb-3">Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs </p>
-        <a href="#" class="link-underline-success" !important>Read More...</a>
-      </div>
-    </div>
-    
-    <!-- 3 -->
-    <div class="col-md-4">
-      <div class="blog-card">
-        <img class="pb-5" src="./images/c3.png" alt="">
-        <p><b>Sports</b>  10 March 2023</p>
-        <h4 class="py-3">How to Be a Professional Footballer in 2023</h4>
-        <p class="pb-3">Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs </p>
-        <a href="#" class="link-underline-success" !important>Read More...</a>
-      </div>
-    </div>
- </div>
-</section>
+        <div class="row g-4">
+            <!-- 1 -->
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <img class="pb-5" src="./images/c1.png" alt="">
+                    <p><b>Travel</b> 13 March 2023</p>
+                    <h4 class="py-3">8 Rules Of Travelling In Sea You Need To Know</h4>
+                    <p class="pb-3">Travelling in sea has many advantages. Some of the advantages of transporting goods
+                        by sea include: you can ship large volumes at costs </p>
+                    <a href="#" class="link-underline-success" !important>Read More...</a>
+                </div>
+            </div>
 
-<!-- Post Section Ends -->
- <section class="bg-main py-5">
-         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container mb-5">
-            <h1>Popular Post</h1>
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <button class="btn main-btn ms-auto  py-3 px-5" type="View">View All</button>
+            <!-- 2 -->
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <img class="pb-5" src="./images/c2.png" alt="">
+                    <p><b>DEVELOPMENT</b> 11March 2023</p>
+                    <h4 class="py-3">How to build strong portfolio and get a Job in UI/UX</h4>
+                    <p class="pb-3">Capitalize on low hanging fruit to identify a ballpark value added activity to beta
+                        test. Override the digital divide with additional clickthroughs from </p>
+                    <a href="#" class="link-underline-success" !important>Read More...</a>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <img class="pb-5" src="./images/c3.png" alt="">
+                    <p><b>Sports</b> 10 March 2023</p>
+                    <h4 class="py-3">How to Be a Professional Footballer in 2023</h4>
+                    <p class="pb-3">Organically grow the holistic world view of disruptive innovation via workplace
+                        diversity and empowerment. survival strategies to ensure proactive </p>
+                    <a href="#" class="link-underline-success" !important>Read More...</a>
+                </div>
             </div>
         </div>
-    </nav>
-</section>
+    </section>
+    <!-- Post Section Ends -->
 
-<!-- Popular Posts Section Start -->
+    <!-- Popular Posts Section Start -->
+    <section class="bg-main py-5 pop-nav">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container mb-5">
+                <h1>Popular Post</h1>
+                <div class="navbar" id="navbarSupportedContent">
+                    <button class="btn main-btn ms-auto  py-3 px-5" type="View">View All</button>
+                </div>
+            </div>
+        </nav>
+    </section>
 
- <section class="blog-section container">
-  <div class="row g-4">
-    <!-- 1 -->
-    <div class="col-md-4">
-      <div class="blog-card">
-        <img class="pb-5" src="./images/4.png" alt="">
-        <p><b>Travel</b>  13 March 2023</p>
-        <h4 class="py-3">8 Rules Of Travelling In Sea You Need To Know</h4>
-        <p class="pb-3">Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs </p>
-        <a href="#" class="link-underline-success">Read More...</a>
-      </div>
-    </div>
-    
-    <!-- 2 -->
-    <div class="col-md-4">
-      <div class="blog-card">
-        <img class="pb-5" src="./images/5.png" alt="">
-        <p><b>DEVELOPMENT</b>  11March 2023</p>
-        <h4 class="py-3">How to build strong portfolio and get a Job in UI/UX</h4>
-        <p class="pb-3">Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs </p>
-        <a href="#" class="link-underline-success">Read More...</a>
-      </div>
-    </div>
-    
-    <!-- 3 -->
-    <div class="col-md-4">
-      <div class="blog-card">
-        <img class="pb-5" src="./images/6.png" alt="">
-        <p><b>Sports</b>  10 March 2023</p>
-        <h4 class="py-3">How to Be a Professional Footballer in 2023</h4>
-        <p class="pb-3">Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs </p>
-        <a href="#" class="link-underline-success">Read More...</a>
-      </div>
-    </div>
+    <section class="blog-section container">
+        <div class="row g-4">
+            <!-- 1 -->
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <img class="pb-5" src="./images/4.png" alt="">
+                    <p><b>Travel</b> 13 March 2023</p>
+                    <h4 class="py-3">8 Rules Of Travelling In Sea You Need To Know</h4>
+                    <p class="pb-3">Travelling in sea has many advantages. Some of the advantages of transporting goods
+                        by sea include: you can ship large volumes at costs </p>
+                    <a href="#" class="link-underline-success">Read More...</a>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <img class="pb-5" src="./images/5.png" alt="">
+                    <p><b>DEVELOPMENT</b> 11March 2023</p>
+                    <h4 class="py-3">How to build strong portfolio and get a Job in UI/UX</h4>
+                    <p class="pb-3">Travelling in sea has many advantages. Some of the advantages of transporting goods
+                        by sea include: you can ship large volumes at costs </p>
+                    <a href="#" class="link-underline-success">Read More...</a>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <img class="pb-5" src="./images/6.png" alt="">
+                    <p><b>Sports</b> 10 March 2023</p>
+                    <h4 class="py-3">How to Be a Professional Footballer in 2023</h4>
+                    <p class="pb-3">Travelling in sea has many advantages. Some of the advantages of transporting goods
+                        by sea include: you can ship large volumes at costs </p>
+                    <a href="#" class="link-underline-success">Read More...</a>
+                </div>
+            </div>
 
 
-      <!-- 4 -->
-    <div class="col-md-4 my-5">
-      <div class="blog-card">
-        <img class="pb-5" src="./images/7.png" alt="">
-        <p><b>Sports</b>  10 March 2023</p>
-        <h4 class="py-3">How to Be a Professional Footballer in 2023</h4>
-        <p class="pb-3">Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs </p>
-        <a href="#" class="link-underline-success">Read More...</a>
-      </div>
-    </div>
- 
+            <!-- 4 -->
+            <div class="col-md-4 my-5">
+                <div class="blog-card">
+                    <img class="pb-5" src="./images/7.png" alt="">
+                    <p><b>Sports</b> 10 March 2023</p>
+                    <h4 class="py-3">How to Be a Professional Footballer in 2023</h4>
+                    <p class="pb-3">Travelling in sea has many advantages. Some of the advantages of transporting goods
+                        by sea include: you can ship large volumes at costs </p>
+                    <a href="#" class="link-underline-success">Read More...</a>
+                </div>
+            </div>
 
-  <!-- 5 -->
-    <div class="col-md-4 my-5">
-      <div class="blog-card">
-        <img class="pb-5" src="./images/8.png" alt="">
-        <p><b>Sports</b>  10 March 2023</p>
-        <h4 class="py-3">How to Be a Professional Footballer in 2023</h4>
-        <p class="pb-3">Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs </p>
-        <a href="#" class="link-underline-success">Read More...</a>
-      </div>
-    </div>
- 
 
-  <!-- 6 -->
-    <div class="col-md-4 my-5">
-      <div class="blog-card">
-        <img class="pb-5" src="./images/9.png" alt="">
-        <p><b>Sports</b>  10 March 2023</p>
-        <h4 class="py-3">How to Be a Professional Footballer in 2023</h4>
-        <p class="pb-3">Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs </p>
-        <a href="#" class="link-underline-success">Read More...</a>
-      </div>
-      </div>
-</div>
-</section>
+            <!-- 5 -->
+            <div class="col-md-4 my-5">
+                <div class="blog-card">
+                    <img class="pb-5" src="./images/8.png" alt="">
+                    <p><b>Sports</b> 10 March 2023</p>
+                    <h4 class="py-3">How to Be a Professional Footballer in 2023</h4>
+                    <p class="pb-3">Travelling in sea has many advantages. Some of the advantages of transporting goods
+                        by sea include: you can ship large volumes at costs </p>
+                    <a href="#" class="link-underline-success">Read More...</a>
+                </div>
+            </div>
 
- <!-- Popular Posts Section Ends -->
 
- <!-- Footer Section Start -->
-<section class="bg-main footer-section">
+            <!-- 6 -->
+            <div class="col-md-4 my-5">
+                <div class="blog-card">
+                    <img class="pb-5" src="./images/9.png" alt="">
+                    <p><b>Sports</b> 10 March 2023</p>
+                    <h4 class="py-3">How to Be a Professional Footballer in 2023</h4>
+                    <p class="pb-3">Travelling in sea has many advantages. Some of the advantages of transporting goods
+                        by sea include: you can ship large volumes at costs </p>
+                    <a href="#" class="link-underline-success">Read More...</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Popular Posts Section Ends -->
+
+    <!-- Footer Section Start -->
+    <section class="bg-main footer-section" id="contact">
         <div class="container">
             <div class="row ">
                 <div class="col-12 col-lg-12 col-md-12 d-flex flex-column justify-content-center align-items-center">
-                    <h1 class="mt-5">Get our stories delivered From </h1>
+                    <h1 class="mt-5">Get our stories delivered From  </h1>
                     <h1 class="mb-5">us to your inbox weekly.</h1>
-                     <div class="d-flex ">
-                         <form class="footer-form d-flex ms-auto" role="search">
-            <input type="text" class="form-control me-2" placeholder="Your Email">
-            <button class="btn btn-custom" type="submit">Start Free Trial</button>
-          </form>
-                     </div>
-                    <p class="mt-lg-5">Get a response tomorrow if you submit by 9pm today. If we received after </p>
-                    <p class="mb-lg-5">9pm will get a reponse the following day.</p>
+                    <div class="d-flex" >
+                        <form class="footer-form d-flex ms-auto" role="search">
+                            <input type="text" class="form-control me-2" placeholder="Your Email">
+                            <button class="btn btn-custom" type="submit">Start Free Trial</button>
+                        </form>
+                    </div>
+                    <p class="mt-3 mb-1">Get a response tomorrow if you submit by 9pm today. If we received after </p>
+                    <p class="mb-5">9pm will get a reponse the following day.</p>
                 </div>
             </div>
         </div>
@@ -284,45 +273,41 @@
 
     <section>
         <div class="footer container text-center">
-<!-- Logo -->
-    <div class="footer-logo my-4">
-      <img src="./images/Logo.png" alt="Zarrin Logo">
-    </div>
+            <!-- Logo -->
+            <div class="footer-logo my-4">
+                <img src="./images/Logo.png" alt="Zarrin Logo">
+            </div>
 
-    <!-- Footer Links -->
-    <ul class="footer-menu d-flex my-4">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
+            <!-- Footer Links -->
+            <ul class="footer-menu d-flex my-4">
+                <li><a href="#">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
 
-    <!-- Social Icons -->
-    <div class="footer-social">
-      <a href="#" class="icon fb">FB</a>
-      <a href="#" class="icon ig">IG</a>
-      <a href="#" class="icon ln">LN</a>
-      <a href="#" class="icon yt">YT</a>
-    </div>
+            <!-- Social Icons -->
+            <div class="footer-social">
+                <a href="#" class="icon fb">FB</a>
+                <a href="#" class="icon ig">IG</a>
+                <a href="#" class="icon ln">LN</a>
+                <a href="#" class="icon yt">YT</a>
+            </div>
 
-  </div>
+        </div>
     </section>
-   
+
     <div class="container text-center mb-4">
         <!-- Copyright -->
-    <p class="copyright">
-      Copyright Ideapeel Inc © 2023 All Right Reserved
-    </p>
-</div>
-    
- <!-- Footer Section Ends -->
+        <p class="copyright">
+            Copyright Ideapeel Inc © 2023 All Right Reserved
+        </p>
+    </div>
+    <!-- Footer Section Ends -->
 
 
-
-    <!-- Bootstrap javascript cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
